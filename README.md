@@ -15,3 +15,7 @@ make install
 ```sh
 make develop
 ```
+
+### Link to static version
+
+[rss-reader-on-surge](http://rss-reader-kmadorin.surge.sh/)
