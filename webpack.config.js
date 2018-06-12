@@ -11,15 +11,11 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
-    ],
-  },
-  module: {
-    rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -27,3 +23,4 @@ module.exports = {
     }),
   ],
 };
+
