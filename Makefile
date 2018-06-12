@@ -1,4 +1,4 @@
-install: install-deps install-flow-typed
+install: install-deps
 
 develop:
 	npm run webpack-serve
@@ -6,18 +6,12 @@ develop:
 install-deps:
 	npm install
 
-install-flow-typed:
-	npm run flow-typed install
-
 build:
 	rm -rf dist
 	NODE_ENV=production npm run webpack
 
 test:
 	npm test
-
-check-types:
-	npm run flow
 
 lint:
 	npm run eslint .
