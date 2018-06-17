@@ -1,7 +1,12 @@
-import Example from './Example';
+import RssReaderView from './view';
+import State from './state';
 
 export default () => {
-  const element = document.getElementById('point');
-  const obj = new Example(element);
-  obj.init();
+  const appContainer = document.getElementById('app');
+  const appState = new State();
+  const appView = new RssReaderView(appState);
+
+  appContainer.innerHTML = '';
+  appContainer.appendChild(appView.element);
 };
+
